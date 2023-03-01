@@ -156,6 +156,8 @@ watch(
           <span class="navbar-toggler-bar bar3"></span>
         </span>
       </button>
+
+      
       <div
         class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0"
         id="navigation"
@@ -200,12 +202,22 @@ watch(
                       >
                         Landing Pages
                       </div>
+                      <!-- test -->
+                      <RouterLink
+                        :to="{ name: 'test' }"
+                        class="dropdown-item border-radius-md"
+                      >
+                        <span>Test</span>
+                      </RouterLink>
+
                       <RouterLink
                         :to="{ name: 'about' }"
                         class="dropdown-item border-radius-md"
                       >
                         <span>About Us</span>
                       </RouterLink>
+
+
                       <RouterLink
                         :to="{ name: 'contactus' }"
                         class="dropdown-item border-radius-md"
@@ -229,6 +241,7 @@ watch(
                       >
                         <span>Sign In</span>
                       </RouterLink>
+                     
                     </div>
                   </div>
                 </div>

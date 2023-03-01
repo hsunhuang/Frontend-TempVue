@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import PresentationView from "../views/Presentation/PresentationView.vue";
 import AboutView from "../views/LandingPages/AboutUs/AboutView.vue";
+//test
+import testView from "../views/LandingPages/test/test.vue";
+
 import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
 import AuthorView from "../views/LandingPages/Author/AuthorView.vue";
 import SignInBasicView from "../views/LandingPages/SignIn/BasicView.vue";
@@ -23,6 +26,14 @@ import ElDropdowns from "../layouts/sections/elements/dropdowns/DropdownsView.vu
 import ElProgressBars from "../layouts/sections/elements/progress-bars/ProgressBarsView.vue";
 import ElToggles from "../layouts/sections/elements/toggles/TogglesView.vue";
 import ElTypography from "../layouts/sections/elements/typography/TypographyView.vue";
+
+//axios
+// import vue from 'vue'
+// import vueaxios from 'vue-axios'
+// import axios from 'axios'
+//axios
+// vue.use(axios, vueaxios)
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -30,6 +41,11 @@ const router = createRouter({
       path: "/",
       name: "presentation",
       component: PresentationView,
+    },
+    {//test
+      path: "/pages/landing-pages/test",
+      name: "test",
+      component: testView,
     },
     {
       path: "/pages/landing-pages/about-us",
