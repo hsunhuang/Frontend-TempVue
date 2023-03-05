@@ -13,6 +13,8 @@ import Typed from "typed.js";
 
 //sections
 import Information from "./Sections/sectiontest.vue";
+import steptest from "./Sections/steptest.vue";
+
 // import AboutTeam from "./Sections/AboutTeam.vue";
 // import Featuring from "./Sections/AboutFeaturing.vue";
 // import Newsletter from "./Sections/AboutNewsletter.vue";
@@ -42,19 +44,13 @@ onUnmounted(() => {
 });
 </script>
 <template>
-  <DefaultNavbar
-    :action="{
-      route: 'javascript:;',
-      label: 'Buy Now',
-      color: 'btn-white',
-    }"
-    transparent
-  />
+  <DefaultNavbar :action="{
+    route: 'javascript:;',
+    label: 'Buy Now',
+    color: 'btn-white',
+  }" transparent />
   <header class="bg-gradient-dark">
-    <div
-      class="page-header min-vh-75"
-      :style="{ backgroundImage: `url(${bg0})` }"
-    >
+    <div class="page-header min-vh-75" :style="{ backgroundImage: `url(${bg0})` }">
       <span class="mask bg-gradient-dark opacity-6"></span>
       <div class="container">
         <div class="row justify-content-center">
@@ -76,18 +72,10 @@ onUnmounted(() => {
             </button>
             <h6 class="text-white mb-2 mt-5">Find us on</h6>
             <div class="d-flex justify-content-center">
-              <a href="javascript:;"
-                ><i class="fab fa-facebook text-lg text-white me-4"></i
-              ></a>
-              <a href="javascript:;"
-                ><i class="fab fa-instagram text-lg text-white me-4"></i
-              ></a>
-              <a href="javascript:;"
-                ><i class="fab fa-twitter text-lg text-white me-4"></i
-              ></a>
-              <a href="javascript:;"
-                ><i class="fab fa-google-plus text-lg text-white"></i
-              ></a>
+              <a href="javascript:;"><i class="fab fa-facebook text-lg text-white me-4"></i></a>
+              <a href="javascript:;"><i class="fab fa-instagram text-lg text-white me-4"></i></a>
+              <a href="javascript:;"><i class="fab fa-twitter text-lg text-white me-4"></i></a>
+              <a href="javascript:;"><i class="fab fa-google-plus text-lg text-white"></i></a>
             </div>
           </div>
         </div>
@@ -95,10 +83,11 @@ onUnmounted(() => {
     </div>
   </header>
   <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
+    <steptest />
     <Information />
-    <AboutTeam />
-    <Featuring />
-    <Newsletter />
+    <!-- <AboutTeam />
+            <Featuring />
+            <Newsletter /> -->
   </div>
   <DefaultFooter />
 </template>
